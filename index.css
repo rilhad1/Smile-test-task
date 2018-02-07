@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    height: 210px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header>nav>div {
+    margin: 0 auto;
+    width: 1289px;
+
+}
+
+.first-nav {
+    background-color: #eff0f3;
+    height: 44px;
+}
+
+.first-nav div {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-nav div div ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-nav div div:nth-child(1) {
+    width: 547px;
+}
+
+
+
+
+.second-nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-nav div>img {
+    padding: 35px 39px 20px 34px;
+    background-color: #ffdc2c;
+}
+
+.second-nav div ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third-nav {
+    background-color: #3c3f43;
+    height: 54px;
+}
+
+.third-nav div ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third-nav div ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.second-nav div input {
+    margin-left: -40px;
+    width: 262px;
+    height: 44px;
+    padding: 0px 62px 0px 25px;
+    border-width: 1px;
+    border-color: rgb(54, 54, 54);
+    border-style: solid;
+    opacity: 0.302;
+    background-image: url(header-icon/search.svg);
+    background-repeat: no-repeat;
+    background-position: 308px;
+    outline: none;
+    border-radius: 40px;
+}
+
+
+.second-nav div>p {
+    font-size: 30.47px;
+    font-family: "ProximaNova";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 0.413;
+    text-align: right;
+    -moz-transform: matrix( 0.59074893696712, 0, 0, 0.59074893696712, 0, 0);
+    -webkit-transform: matrix( 0.59074893696712, 0, 0, 0.59074893696712, 0, 0);
+    -ms-transform: matrix( 0.59074893696712, 0, 0, 0.59074893696712, 0, 0);
+}
+
+
+header button{
+  border-width: 2px;
+  border-color: rgb(255, 220, 44);
+  border-style: solid;
+  
+}
