@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>База авто звука</title>
-    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
@@ -24,37 +24,37 @@
                 </div>
                 <div>
                     <ul>
-                        <li><a href="#">Рус</a></li>
-                        <li><a href="#">Укр</a></li>
+                        <li class="lang"><a href="#">Рус</a></li>
+                        <li class="lang"><a href="#">Укр</a></li>
                     </ul>
                 </div>
                 <div>
                     <p>Ваш город:</p>
-                    <select>
+                    <select id="selectbox" data-selected="">
                     <option>Киев</option>
                     <option>Львов</option>
                     <option>Тернополь</option>
                 </select>
                 </div>
-                <div>
+                <div class="in-out">
                     <p><a href="#"><img src="header-icon/sign-in.svg" alt="Вход">Вход</a></p>
                     <p><a href="#">Регистрация</a></p>
                 </div>
         </nav>
         <nav class="second-nav">
             <div>
-                <img src="img/logo.png" alt="logo">
+                <img src="img/logo.png" alt="logo" class="logo">
                 <input type="text" placeholder="Поиск по названию, коду, категории товара" name="search">
-                <p>0-800-30-15-85</p>
+                <p class="phone-num">0-800-30-15-85</p>
                 <button>Обратный звонок</button>
-                <div>
-                    <ul>
-                        <li><a href="#"><img src="header-icon/garage.svg"><p>Гараж</p></a></li>
-                        <li><a href="#"><img src="header-icon/selected.svg"><p>Избранное</p></a></li>
-                        <li><a href="#"><img src="header-icon/comparison.svg"><p>Сравнение</p></a></li>
-                        <li><a href="#"><img src="header-icon/basket.svg"><p>Корзина</p></a></li>
-                    </ul>
-                </div>
+
+                <ul>
+                    <li><a href="#"><img src="header-icon/garage.svg"><p>Гараж</p></a></li>
+                    <li><a href="#"><img src="header-icon/selected.svg"><p>Избранное</p></a></li>
+                    <li><a href="#"><img src="header-icon/comparison.svg"><p>Сравнение</p></a></li>
+                    <li><a href="#"><img src="header-icon/basket.svg"><p>Корзина</p></a></li>
+                </ul>
+
             </div>
         </nav>
         <nav class="third-nav">
@@ -67,7 +67,7 @@
                     </li>
                     <li>
                         <a href="#">
-                       <img src="header-icon/shares.svg"><p>АКЦИИ</p>
+                        <img src="header-icon/shares.svg"><p>АКЦИИ</p>
                     </a>
                     </li>
                     <li>

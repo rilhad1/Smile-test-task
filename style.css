@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0 auto; }
+
+header {
+  height: 210px;
+  margin: 0 auto; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.flex, .first-nav > div, .first-nav > div > div, .first-nav > div > div ul, .first-nav > div > div ul li, .second-nav div, .second-nav div ul, .second-nav div ul li a, .third-nav div ul, .third-nav div ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+header > nav > div {
+  margin: 0 auto;
+  max-width: 1289px; }
+
+.first-nav {
+  background-color: #eff0f3; }
+  .first-nav > div div:nth-child(1) {
+    width: 547px; }
+  .first-nav > div > div select {
+    margin-left: 36px;
+    border: 0;
+    -webkit-appearance: button;
+    font-weight: bold;
+    border-radius: 0;
+    background-image: url(header-icon/arrow-down.svg);
+    background-color: #EFF0F3;
+    background-position: 97% center;
+    background-repeat: no-repeat; }
+  .first-nav > div > div ul {
+    width: 100%; }
+    .first-nav > div > div ul li:hover {
+      border-width: 0 0 1px 0;
+      border-color: #fb2539;
+      border-style: solid; }
+    .first-nav > div > div ul li {
+      box-sizing: border-box;
+      height: 44px; }
+      .first-nav > div > div ul li a {
+        color: #777777; }
+
+.lang {
+  margin: 0 13px 0 13px; }
+
+.in-out p {
+  margin: 0 18px; }
+
+.second-nav div ul {
+  width: 275px; }
+  .second-nav div ul li a {
+    flex-direction: column; }
+
+.logo {
+  padding: 35px 39px 20px 34px;
+  background-color: #ffdc2c; }
+
+.second-nav div input {
+  margin-left: -40px;
+  width: 262px;
+  height: 44px;
+  padding: 0px 62px 0px 25px;
+  border-width: 1px;
+  border-color: #363636;
+  border-style: solid;
+  opacity: 0.302;
+  background-image: url(header-icon/search.svg);
+  background-repeat: no-repeat;
+  background-position: 308px;
+  outline: none;
+  border-radius: 40px; }
+
+.phone-num {
+  font-size: 20px;
+  font-family: "ProximaNova";
+  color: #333333;
+  font-weight: bold;
+  line-height: 0.413;
+  text-align: right; }
+
+header button {
+  border-width: 2px;
+  border-color: #ffdc2c;
+  border-style: solid;
+  background-color: white;
+  padding: 12px 22px; }
+
+.third-nav {
+  background-color: #3c3f43; }
+  .third-nav div ul li:first-child {
+    width: 234px;
+    background-color: #fb2539; }
+  .third-nav div ul li {
+    height: 54px; }
+    .third-nav div ul li a {
+      height: 100%;
+      color: white; }
+      .third-nav div ul li a img {
+        margin: 0 10px 0 0; }
+
+/*# sourceMappingURL=style.css.map */
