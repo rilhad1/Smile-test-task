@@ -5,24 +5,23 @@
 body {
   margin: 0 auto; }
 
-header {
-  height: 210px;
-  margin: 0 auto; }
-
 li {
   list-style: none; }
 
 a {
   text-decoration: none; }
 
-.flex, .first-nav > div, .first-nav > div > div, .first-nav > div > div ul, .first-nav > div > div ul li, .second-nav div, .second-nav div ul, .second-nav div ul li a, .third-nav div ul, .third-nav div ul li a {
+.flex, .first-nav > div, .first-nav > div > div, .first-nav > div > div ul, .first-nav > div > div ul li, .second-nav div, .second-nav div ul, .second-nav div ul li a, .third-nav div ul, .third-nav div ul li a, .crump-name div, .tovar > div div.image, .tovar > div div.code, .tovar > div div.buy {
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-header > nav > div {
-  margin: 0 auto;
-  max-width: 1289px; }
+header {
+  height: 210px;
+  margin: 0 auto; }
+  header > nav > div {
+    margin: 0 auto;
+    max-width: 1289px; }
 
 .first-nav {
   background-color: #eff0f3; }
@@ -55,11 +54,19 @@ header > nav > div {
 
 .in-out p {
   margin: 0 18px; }
+.in-out p:first-child a {
+  color: #FB2539; }
+  .in-out p:first-child a img {
+    margin-right: 5px; }
+.in-out p:last-child a {
+  color: #777777; }
 
 .second-nav div ul {
   width: 275px; }
   .second-nav div ul li a {
     flex-direction: column; }
+    .second-nav div ul li a p {
+      color: black; }
 
 .logo {
   padding: 35px 39px 20px 34px;
@@ -87,6 +94,14 @@ header > nav > div {
   font-weight: bold;
   line-height: 0.413;
   text-align: right; }
+  .phone-num i {
+    border: solid #333333;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin: 0px 0 5px 6px; }
 
 header button {
   border-width: 2px;
@@ -97,15 +112,114 @@ header button {
 
 .third-nav {
   background-color: #3c3f43; }
+  .third-nav div ul:first-child a {
+    padding: 18px 20px; }
   .third-nav div ul li:first-child {
     width: 234px;
     background-color: #fb2539; }
   .third-nav div ul li {
     height: 54px; }
     .third-nav div ul li a {
-      height: 100%;
       color: white; }
       .third-nav div ul li a img {
         margin: 0 10px 0 0; }
+
+.crump-name {
+  margin: 20px auto 0;
+  max-width: 1289px;
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+  .crump-name .crump {
+    font-size: 13px;
+    font-family: "ProximaNova";
+    color: #999999;
+    line-height: 0.572; }
+    .crump-name .crump i {
+      border: solid #999999;
+      border-width: 0 1px 1px 0;
+      display: inline-block;
+      padding: 1.7px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin: 0px 15px 2.5px 15px; }
+  .crump-name div h2 {
+    font-size: 34px;
+    font-family: "ProximaNova";
+    color: #333333;
+    font-weight: bold;
+    line-height: 0.368;
+    text-align: right; }
+  .crump-name div p {
+    background-image: url(../img/codtovara.svg);
+    background-repeat: no-repeat;
+    padding: 8px; }
+
+.tovar {
+  max-width: 1289px; }
+  .tovar > div {
+    margin: 20px 15px;
+    width: 235px; }
+    .tovar > div div.image {
+      height: 235px;
+      justify-content: center; }
+    .tovar > div div.code p {
+      margin-top: 15px;
+      font-size: 12px;
+      font-family: "ProximaNova";
+      line-height: 1.2; }
+    .tovar > div div.code p:first-child {
+      color: #999999; }
+    .tovar > div div.code p:last-child {
+      color: #57ae85; }
+      .tovar > div div.code p:last-child img {
+        margin-right: 8px; }
+    .tovar > div div.name {
+      margin-top: 19px; }
+      .tovar > div div.name p {
+        font-size: 15px;
+        font-family: "ProximaNova";
+        color: #333333;
+        line-height: 1.2; }
+    .tovar > div div.price {
+      margin-top: 17px; }
+      .tovar > div div.price p {
+        font-size: 30.214px;
+        font-family: "ProximaNova";
+        color: #333333;
+        font-weight: bold;
+        line-height: 1.2; }
+    .tovar > div div.buy {
+      margin-top: 17px;
+      justify-content: flex-start; }
+      .tovar > div div.buy div.btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 121px;
+        height: 39px;
+        background-color: #fb2539; }
+        .tovar > div div.buy div.btn p {
+          font-size: 15px;
+          font-family: "ProximaNova";
+          color: white;
+          font-weight: bold;
+          line-height: 0.496; }
+      .tovar > div div.buy img {
+        margin-left: 18px; }
+    .tovar > div div.rtg-feed {
+      margin-top: 20px; }
+      .tovar > div div.rtg-feed a {
+        font-size: 13px;
+        font-family: "ProximaNova";
+        color: #777777;
+        line-height: 1.2;
+        border: solid #777777;
+        border-width: 0 0 1px 0;
+        padding: 0 0 4px 0;
+        margin: 0 0 0 7px; }
+      .tovar > div div.rtg-feed div img {
+        margin-left: 21px; }
 
 /*# sourceMappingURL=style.css.map */

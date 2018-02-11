@@ -1,27 +1,13 @@
-* 
-    margin: 0
-    padding: 0
 
-body 
-    margin: 0 auto
-
-header 
-    height: 210px
-    margin: 0 auto
-
-li 
-    list-style: none
-
-a 
-    text-decoration: none
-    
 .flex
     display: flex
     justify-content: space-between
     align-items: center
 
-header>
-    nav>
+header
+    height: 210px
+    margin: 0 auto
+    >nav>
         div 
             margin: 0 auto
             max-width: 1289px
@@ -64,6 +50,14 @@ header>
 .in-out
     p
         margin: 0 18px
+    p:first-child
+        a
+            color: #FB2539
+            img
+                margin-right: 5px
+    p:last-child
+        a
+            color: #777777
     
                       
 .second-nav   
@@ -76,6 +70,8 @@ header>
                 a
                     @extend .flex
                     flex-direction: column
+                    p
+                        color: black
                     
 .logo
     padding: 35px 39px 20px 34px
@@ -101,12 +97,22 @@ header>
             border-radius: 40px
 
 .phone-num
-            font-size: 20px
-            font-family: "ProximaNova"
-            color: rgb(51, 51, 51)
-            font-weight: bold
-            line-height: 0.413
-            text-align: right
+    font-size: 20px
+    font-family: "ProximaNova"
+    color: rgb(51, 51, 51)
+    font-weight: bold
+    line-height: 0.413
+    text-align: right
+    i
+        border: solid #333333
+        border-width: 0 1px 1px 0
+        display: inline-block
+        padding: 3px
+        transform: rotate(45deg)
+        -webkit-transform: rotate(45deg)
+        margin: 0px 0 5px 6px
+    
+    
             
 
 header
@@ -120,6 +126,10 @@ header
 .third-nav 
     background-color: #3c3f43
     div 
+        ul:first-child
+            a
+                padding: 18px 20px
+                
         ul
             @extend .flex
             li:first-child
@@ -129,7 +139,6 @@ header
                 height: 54px
                 a 
                     @extend .flex
-                    height: 100%
                     color: white
                     img
                         margin: 0 10px 0 0
