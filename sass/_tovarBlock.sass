@@ -1,57 +1,34 @@
-.crump-name
-    margin: 20px auto 0
-    max-width: 1289px
-    height: 68px
-    display: flex
-    justify-content: space-between
-    flex-direction: column
-    .crump
-        font-size: 13px
-        font-family: "ProximaNova"
-        color: rgb(153, 153, 153)
-        line-height: 0.572
-        i
-                border: solid rgb(153, 153, 153)
-                border-width: 0 1px 1px 0
-                display: inline-block
-                padding: 1.7px
-                transform: rotate(-45deg)
-                -webkit-transform: rotate(-45deg)
-                margin: 0px 15px 2.5px 15px
-    div
-        @extend .flex
-        h2
-            font-size: 34px
-            font-family: "ProximaNova"
-            color: rgb(51, 51, 51)
-            font-weight: bold
-            line-height: 0.368
-            text-align: right
-        p
-            background-image: url(../img/codtovara.svg)
-            background-repeat: no-repeat
-            padding: 8px
-            
-            
-            
-            
-            
-            
+#simTovar
+    margin: 0 auto 
+
 .tovar
     max-width: 1289px
+    .sale 
+        position: absolute
+        background-color: #ff8941
+        border-radius: 5px
+        display: inline-block
+        padding: 4px 10px
+        color: #fff
+    span.discount 
+        color: #ff8941
+        font-size: 15px
+        text-decoration: line-through
+        margin-left: 15px
     >div
-        margin: 20px 15px
+        margin: 20px 0
         width: 235px
         div.image
-            height: 235px
+            max-height: 235px
             @extend .flex
             justify-content: center
+            img
+                max-height: 215px
         div.code
             @extend .flex
             p
                 margin-top: 15px
                 font-size: 12px
-                font-family: "ProximaNova"
                 line-height: 1.2
             p:first-child
                 color: rgb(153, 153, 153)
@@ -63,22 +40,25 @@
             margin-top: 19px
             p
                 font-size: 15px
-                font-family: "ProximaNova"
                 color: rgb(51, 51, 51)
                 line-height: 1.2
         div.price
             margin-top: 17px
+            display: flex
+            align-items: center
             p
                 font-size: 30.214px
-                font-family: "ProximaNova"
                 color: rgb(51, 51, 51)
                 font-weight: bold
                 line-height: 1.2
+            
         div.buy
             margin-top: 17px
             @extend .flex
             justify-content: flex-start
             div.btn
+                border: 2px solid #fb2539
+                cursor: pointer
                 display: flex
                 justify-content: center
                 align-items: center
@@ -87,17 +67,23 @@
                 background-color: #fb2539
                 p
                     font-size: 15px
-                    font-family: "ProximaNova"
                     color: rgb(255, 255, 255)
                     font-weight: bold
                     line-height: 0.496
+                &:hover
+                    background-color: white
+                    border: 2px solid #fb2539
+                    p 
+                        color: black
+
             img
                 margin-left: 18px
         div.rtg-feed
+            display: flex
+            justify-content: space-around
             margin-top: 20px
             a
                 font-size: 13px
-                font-family: "ProximaNova"
                 color: rgb(119, 119, 119)
                 line-height: 1.2
                 border: solid  rgb(119, 119, 119)
@@ -107,7 +93,5 @@
             div
                 img
                     margin-left: 21px
-
-
 
 

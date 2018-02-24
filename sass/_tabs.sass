@@ -1,0 +1,335 @@
+.mainPart
+    max-width: 1289px
+    margin: 0 auto 70px
+#tabbs
+    width: 940px
+.tabbs
+    display: flex
+    flex-wrap: wrap
+
+
+.tabsLinks
+    width: 100%
+    position: relative
+    margin-bottom: 30px
+    li
+        position: relative
+        border-bottom: 2px solid transparent
+        display: inline-block
+        color: #777
+        font-size: 16px
+        font-weight: 700
+        padding-bottom: 15px
+        margin-right: 65px
+        &:hover
+            cursor: pointer
+            color: #fb2525
+            border-bottom-color: #fb2525
+    li.activeList
+        color: #fb2525
+        border-bottom-color: #fb2525
+   
+    &::after
+        content: ''
+        z-index: -100
+        height: 2px
+        position: absolute
+        right: 0
+        bottom: 0
+        left: 0
+        background-color: #e9eaeb
+
+
+// #tabbs
+
+
+
+
+
+#tab1
+    display: block
+    visibility: visible
+    p
+        cursor: pointer
+        display: inline-block
+        color: #333
+        font-size: 13px
+        text-decoration: underline
+        margin: 10px 0 0 13px
+        i
+            margin: 0 10px 0
+            border: 1px solid #fb2539
+            border-width: 0 1.5px 1.5px 0
+            display: inline-block
+            padding: 3px
+            transform: rotate(45deg)
+            -webkit-transform: rotate(45deg)
+        .upRotate
+            transform: rotate(-135deg)
+            -webkit-transform: rotate(-135deg)
+    
+    h2
+        margin-top: 30px
+        margin-bottom: 15px
+        font-size: 20px
+    div.hideThis
+        height: 640px
+    .chart1
+        overflow: hidden
+        height: 240px
+    
+        .charLine:nth-child(odd) 
+            background-color: #eff0f3
+        .charLine
+            padding: 15px 5px 15px 20px
+            font-size: 13px
+            div
+                display: inline-block
+            div:nth-child(1)
+                width: 54%
+            div:nth-child(2)
+                width: 42%
+#tab2
+    h2
+        margin-top: 30px
+        margin-bottom: 15px
+        font-size: 20px
+    
+    div.hideThis
+        height: 350px
+    .description
+        font-size: 14px
+        line-height: 22px
+        overflow: hidden
+        height: 80px
+        color: #333
+        font-weight: 400
+    
+    >p
+        cursor: pointer
+        display: inline-block
+        color: #333
+        font-size: 13px
+        text-decoration: underline
+        margin: 10px 0 0 13px
+        i
+            margin: 0 10px 0
+            border: 1px solid #fb2539
+            border-width: 0 1.5px 1.5px 0
+            display: inline-block
+            padding: 3px
+            transform: rotate(45deg)
+            -webkit-transform: rotate(45deg)
+        .upRotate
+            transform: rotate(-135deg)
+            -webkit-transform: rotate(-135deg)
+
+#hideReview
+        overflow: hidden
+        height: 833px
+#tab3
+    .tabsInTab
+        @extend .flex
+        align-items: flex-start
+    .tabsLink
+        font-size: 0
+        margin-bottom: 30px
+        .linkBut
+            cursor: pointer
+            background-color: transparent
+            border: 2px solid #e1e1e1
+            display: inline-block
+            text-align: center
+            outline: 0
+            color: #777
+            font-size: 16px
+            font-weight: 700
+            padding: 7.5px 20px
+    .reviewBtn 
+        font-weight: 700
+        font-size: 15px
+        background-color: #ffdc2c
+        cursor: pointer
+        color: #333
+        border: 2px solid #ffdc2c
+        display: inline-block
+        text-align: center
+        outline: 0
+        padding: 7px 20px
+        &:hover
+            background-color: #fff
+
+        
+    .hideThis
+        height: 100%
+    .reviewItem 
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        border: 1px solid #ffdc2c
+        .reviewInfo 
+            width: 75%
+            padding: 25px 25px 30px 30px
+            position: relative
+            h4
+                font-size: 16px
+                font-weight: 700
+                margin-bottom: 15px
+                span
+                    color: #999
+                    font-size: 13px
+                    font-weight: 400
+                    margin-left: 25px
+            p 
+                font-size: 13px
+                line-height: 20px
+                margin-bottom: 15px
+                span 
+                    font-weight: 700
+                    margin-right: 10px
+                .green
+                    color: green
+                .red
+                    color: red
+            .action
+                @extend .flex
+                width: 100%
+                font-size: 13px
+                a 
+                    display: inline-block
+                    color: #333
+                    text-decoration: underline
+                    margin-right: 15px
+                .report
+                    .green
+                        color: green
+                    .red
+                        color: red
+        
+        .reviewInfo:after 
+            content: ''
+            position: absolute
+            top: 33px
+            right: 0
+            bottom: 33px
+            width: 1px
+            background-color: #e9eaeb    
+        .reviewRating    
+            display: flex
+            flex-wrap: wrap
+            p
+                width: 100%
+                margin: 20px 0 20px 15px
+                font-size: 16px
+                font-weight: 700
+            
+            
+    .contentTabInTab>p
+        cursor: pointer
+        display: inline-block
+        color: #333
+        font-size: 13px
+        text-decoration: underline
+        margin: 10px 0 0 13px
+        i
+            margin: 0 10px 0
+            border: 1px solid #fb2539
+            border-width: 0 1.5px 1.5px 0
+            display: inline-block
+            padding: 3px
+            transform: rotate(45deg)
+            -webkit-transform: rotate(45deg)
+        .upRotate
+            transform: rotate(-135deg)
+            -webkit-transform: rotate(-135deg)
+
+
+#tab4
+    .tabTitle 
+        font-size: 20px
+        font-weight: 700
+        margin-bottom: 10px
+    .videoList 
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-bottom: 50px
+        li
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+            width: 456px
+            height: 302px
+        li:first-child
+            background-image: url(../img/video-1.jpg)
+        li:last-child
+            background-image: url(../img/video-2.jpg)
+    .article
+        >div
+            display: flex
+            flex-wrap: wrap
+            // width: 685px
+            height: 237px
+            overflow: hidden
+            >div:first-child
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 305px
+                overflow: hidden
+                img
+                    z-index: -10
+                    max-width: none
+                    width: auto
+            >div:last-child
+                border: 1px solid #e9eaeb
+                padding: 25px 29px 20px
+                width: 320px 
+                >div
+                    color: #999
+                    font-size: 12px
+                    margin-bottom: 5px
+                h4
+                    color: #333
+                    font-size: 20px
+                    font-weight: 700
+                    line-height: 26px
+                    margin-bottom: 10px
+                p
+                    display: block
+                    text-overflow: ellipsis
+                    display: -webkit-box
+                    -webkit-line-clamp: 4
+                    -webkit-box-orient: vertical
+                    color: #777
+                    font-size: 14px
+                    line-height: 20px
+                    max-height: 80px
+                    overflow: hidden
+
+
+#articleArrow
+    >div
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        margin-bottom: -238px
+    .articleArrow  
+            padding: 60px 22.5px
+            z-index: 100
+
+
+
+#tab5
+    h2
+        margin-top: 30px
+        margin-bottom: 15px
+        font-size: 20px
+    .sertificates
+        @extend .flex
+        justify-content: space-around
+  
+  
+  
+  

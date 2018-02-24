@@ -2,216 +2,2166 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>База авто звука</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="sass/rating.css" type="text/css" />
-    <link rel="stylesheet" href="owl-carousel/style.css" type="text/css" />
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>База авто звука</title>
+  <link rel="stylesheet" href="index.css" type="text/css" />
+  <link rel="stylesheet" href="node_modules/fonts/fonts.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
 </head>
 
 <body>
-    <header>
-        <nav class="first-nav">
-            <div>
-                <div>
-                    <ul>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">Магазины</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Оплата</a></li>
-                        <li><a href="#">Бонусная программа</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li class="lang"><a href="#">Рус</a></li>
-                        <li class="lang"><a href="#">Укр</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Ваш город:</p>
-                    <select id="selectbox">
-                    <option>Киев</option>
-                    <option>Львов</option>
-                    <option>Тернополь</option>
-                </select>
-                </div>
-                <div class="in-out">
-                    <p><a href="#"><img src="header-icon/sign-in.svg" alt="Вход">Вход</a></p>
-                    <p><a href="#">Регистрация</a></p>
-                </div>
-        </nav>
-        <nav class="second-nav">
-            <div>
-                <img src="img/logo.png" alt="logo" class="logo">
-                <input type="text" placeholder="Поиск по названию, коду, категории товара" name="search">
-                <p class="phone-num">0-800-30-15-85<i></i></p>
-                <button>Обратный звонок</button>
+  <header>
+    <nav class="first-nav">
+      <div>
+        <div>
+          <ul>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Магазины</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Бонусная программа</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li class="lang"><a href="#">Рус</a></li>
+            <li class="lang"><a href="#">Укр</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>Ваш город:</p>
+          <select id="selectbox">
+              <option>Киев</option>
+              <option>Львов</option>
+              <option>Тернополь</option>
+          </select>
+        </div>
+        <div class="in-out">
+          <p><a href="#"><img src="img/header-icon/sign-in.svg" alt="Вход">Вход</a></p>
+          <p><a href="#">Регистрация</a></p>
+        </div>
+      </div>
+    </nav>
+    <nav class="second-nav">
+      <div>
+        <img src="img/logo.png" alt="logo" class="logo">
+        <form>
+          <label class="header__search">
+            <input type="text" placeholder="Поиск по названию, коду, категории товара">
+          </label>
+        </form>
+        <p class="phone-num">0-800-30-15-85<i></i></p>
+        <button>Обратный звонок</button>
 
-                <ul>
-                    <li><a href="#"><img src="header-icon/garage.svg"><p>Гараж</p></a></li>
-                    <li><a href="#"><img src="header-icon/selected.svg"><p>Избранное</p></a></li>
-                    <li><a href="#"><img src="header-icon/comparison.svg"><p>Сравнение</p></a></li>
-                    <li><a href="#"><img src="header-icon/basket.svg"><p>Корзина</p></a></li>
-                </ul>
+        <ul>
+          <li><a href="#"><img src="img/header-icon/garage.svg"><p>Гараж</p></a></li>
+          <li><a href="#"><img src="img/header-icon/selected.svg"><p>Избранное</p></a></li>
+          <li><a href="#"><img src="img/header-icon/comparison.svg"><p>Сравнение</p></a></li>
+          <li><a href="#"><img src="img/header-icon/basket.svg"><p>Корзина</p></a></li>
+        </ul>
 
+      </div>
+    </nav>
+    <nav class="third-nav">
+      <div>
+        <ul>
+          <li class="dropdown">
+            <a class="dropbtn" href="#">
+              <p>Каталог товаров</p><img src="img/header-icon/catalog.svg"></a>
+            <div class="dropdown-content">
+              <a href="#">Каталог 1</a>
+              <a href="#">Каталог 2</a>
+              <a href="#">Каталог 3</a>
             </div>
-        </nav>
-        <nav class="third-nav">
-            <div>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <p>Каталог товаров</p><img src="header-icon/catalog.svg"></a>
-                    </li>
-                    <li><a href="#"><img src="header-icon/shares.svg"><p>АКЦИИ</p></a></li>
-                    <li><a href="#"><img src="header-icon/tests.svg"><p>СРАВНИТЕЛЬНЫЕ ТЕСТЫ</p></a></li>
-                    <li><a href="#"><img src="header-icon/how-select.svg"><p>КАК ВЫБРАТЬ</p></a></li>
-                    <li><a href="#"><img src="header-icon/news.svg"><p>НОВОСТИ</p></a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+          </li>
+          <li><a href="#"><img src="img/header-icon/shares.svg"><p>АКЦИИ</p></a></li>
+          <li><a href="#"><img src="img/header-icon/tests.svg"><p>СРАВНИТЕЛЬНЫЕ ТЕСТЫ</p></a></li>
+          <li><a href="#"><img src="img/header-icon/how-select.svg"><p>КАК ВЫБРАТЬ</p></a></li>
+          <li><a href="#"><img src="img/header-icon/news.svg"><p>НОВОСТИ</p></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
 
 
-    <section class="crump-name">
+    <section id="aboutTovar">
+      <div class="crump-name">
         <p class="crump">Главная <i></i> Запчасти и расходники <i></i> Масло <i></i> Моторное масло <i></i> Моторное масло MOBIL Super 3000 X1 5W-40, 4л</p>
         <div>
-            <h2>Моторное масло MOBIL Super 3000 X1 5W-40, 4л</h2>
-            <p>Код товара : 39207</p>
+          <h2>Моторное масло MOBIL Super 3000 X1 5W-40, 4л</h2>
+          <p>Код товара : 39207</p>
         </div>
+      </div>
+      <div class="infoAboutTovar">
+        <div id="miniGalery">
+          <div>
+            <div class="minGalerry">
+              <img src="img/mobil1.png">
+            </div>
+            <div class="minGalerry">
+              <img src="img/magnatec.png">
+            </div>
+            <div class="minGalerry">
+              <img src="img/shell.png">
+            </div>
+            <div class="minGalerry">
+              <img src="img/mobile-super.png">
+            </div>
+            <div class="minGalerry">
+              <img src="img/helix.png">
+            </div>
+          </div>
+          <div id="expandedImg"></div>
+        </div>
+        <div class="tovarInfo">
+          <div>
+            <p>Нет в наличии</p>
+            <div class="stars-ratings "></div>
+            <div class="resultRating"></div>
+            <a href=""><i></i>3 отзыва</a>
+            <a href=""><i></i>4 вопроса</a>
+          </div>
+          <div>
+            <div class="price">456 <span>грн</span></div>
+            <div class="beforRedBut"><a class="redBut" href="">Сообщить о поступлении</a></div>
+            <p>ELF Tranself NFJ 75W-80 1л - Трансмиссионное масло <br>Тип масла: Трансмиссионное масло ; Тип основы масла: синтетическое масло; SAE: 75W-80; Емкость, <br> л: 1 ELF Tranself NFJ 75W-80 1л - Трансмиссионное масло Тип масла: Трансмиссионное
+              масло ; Тип основы масла: синтетическое масло; SAE: 75W-80; Емкость, л: 1</p>
+            <div class="action">
+              <a href=""><i class="icon icon_share"></i>Поделиться</a>
+              <a href=""><i class="icon icon_compare"></i>Сравнить</a>
+            </div>
+          </div>
+          <div class="similar">
+            <p>Похожий товар</p>
+            <a class="similarImg" href=""><img src="img/magnatec.png" alt="oil"></a>
+            <div class="status">
+              <span><img src="img/galochka.svg">В наличии</span>
+            </div>
+            <a class="discr" href="">Трансмиссионное масло <br> CASTRO Manual EP <br> 80W-90 1л</a>
+            <div class="price">345 <span>грн</span></div>
+            <a class="allSimilar" href="">Показать все похожие товары</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div id="star-rating" hidden>
-        <fieldset class="rating">
-            <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5"></label>
-            <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half"></label>
-            <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4"></label>
-            <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half"></label>
-            <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3"></label>
-            <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half"></label>
-            <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2"></label>
-            <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half"></label>
-            <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1"></label>
-            <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf"></label>
-        </fieldset>
-    </div>
 
-    <div>
-        <div id="arrows" class="carousel">
+
+
+    <section id="simTovar">
+      <div id="arrows" class="carousel">
+        <h2 class="simularTovar">Похожие товары</h2>
+        <div>
+          <div class="arrow arrPrev"><i class="prev"></i></div>
+          <div class="arrow arrNext"><i class="next"></i></div>
+        </div>
+      </div>
+      <div id="carousel" class="carousel">
+        <div class="gallery">
+          <ul>
+            <li>
+              <div class="slider">
+                <div>
+                  <div class="tovar">
+                    <span class="sale">Скидка -10%</span>
+                    <div>
+                      <div class="image"><img src="img/magnatec.png"></div>
+                      <div class="code">
+                        <p>Код товара : 39207</p>
+                        <p><img src="img/galochka.svg">В наличии</p>
+                      </div>
+                      <div class="name">
+                        <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                      </div>
+                      <div class="price">
+                        <p>104 грн</p><span class="discount">125 грн</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slider">
+                <div>
+                  <div class="tovar">
+                    <div>
+                      <div class="image"><img src="img/helix.png"></div>
+                      <div class="code">
+                        <p>Код товара : 39207</p>
+                        <p><img src="img/galochka.svg">В наличии</p>
+                      </div>
+                      <div class="name">
+                        <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                      </div>
+                      <div class="price">
+                        <p>104 грн</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slider">
+                <div>
+                  <div class="tovar">
+                    <div>
+                      <div class="image"><img src="img/mobil1.png"></div>
+                      <div class="code">
+                        <p>Код товара : 39207</p>
+                        <p><img src="img/galochka.svg">В наличии</p>
+                      </div>
+                      <div class="name">
+                        <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                      </div>
+                      <div class="price">
+                        <p>104 грн</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slider">
+                <div>
+                  <div class="tovar">
+                    <div>
+                      <div class="image"><img src="img/mobile-super.png"></div>
+                      <div class="code">
+                        <p>Код товара : 39207</p>
+                        <p><img src="img/galochka.svg">В наличии</p>
+                      </div>
+                      <div class="name">
+                        <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                      </div>
+                      <div class="price">
+                        <p>104 грн</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slider">
+                <div>
+                  <div class="tovar">
+                    <div>
+                      <div class="image"><img src="img/shell.png"></div>
+                      <div class="code">
+                        <p>Код товара : 39207</p>
+                        <p><img src="img/galochka.svg">В наличии</p>
+                      </div>
+                      <div class="name">
+                        <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                      </div>
+                      <div class="price">
+                        <p>104 грн</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slider">
+                <div>
+                  <div class="tovar">
+                    <div>
+                      <div class="image"><img src="img/helix.png"></div>
+                      <div class="code">
+                        <p>Код товара : 39207</p>
+                        <p><img src="img/galochka.svg">В наличии</p>
+                      </div>
+                      <div class="name">
+                        <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                      </div>
+                      <div class="price">
+                        <p>104 грн</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slider">
+                <div>
+                  <div class="tovar">
+                    <div>
+                      <div class="image"><img src="img/magnatec.png"></div>
+                      <div class="code">
+                        <p>Код товара : 39207</p>
+                        <p><img src="img/galochka.svg">В наличии</p>
+                      </div>
+                      <div class="name">
+                        <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                      </div>
+                      <div class="price">
+                        <p>104 грн</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mainPart">
+      <ul class="tabsLinks">
+        <li class="tablink" onclick="openTab('tab1', this)" id="defaultOpen">Характеристики</li>
+        <li class="tablink" onclick="openTab('tab2', this)">Описание</li>
+        <li class="tablink" onclick="openTab('tab3', this)">Отзывы</li>
+        <li class="tablink" onclick="openTab('tab4', this)">Видеообзоры и статьи</li>
+        <li class="tablink" onclick="openTab('tab5', this)">Сертификаты</li>
+      </ul>
+      <section class="tabbs">
+        <!--///////////TABSS////////////-->
+        <div ID="tabbs">
+          <!--///////////TABSS////////////-->
+
+          <aside id="tab1" class="tabcontent">
+            <h2>Характеристики товара</h2>
+            <div id="chart1" class="chart1">
+              <div class="charLine">
+                <div>Класс вязкости:</div>
+                <div>5W-40</div>
+              </div>
+              <div class="charLine">
+                <div>сСт при 40ºC:</div>
+                <div>84</div>
+              </div>
+              <div class="charLine">
+                <div>сСт при 100ºC:</div>
+                <div>14</div>
+              </div>
+              <div class="charLine">
+                <div>Зольность сульфатная, % мас., ASTM D 874:</div>
+                <div>0,0095</div>
+              </div>
+              <div class="charLine">
+                <div>Содержание фосфора:</div>
+                <div>0.0095</div>
+              </div>
+              <div class="charLine">
+                <div>Температура вспышки, ºC, ASTM D 92:</div>
+                <div>222</div>
+              </div>
+              <div class="charLine">
+                <div>Температура застывания, ºC, ASTM D 97:</div>
+                <div>-39</div>
+              </div>
+              <div class="charLine">
+                <div>Класс вязкости:</div>
+                <div>5W-40</div>
+              </div>
+              <div class="charLine">
+                <div>сСт при 40ºC:</div>
+                <div>84</div>
+              </div>
+              <div class="charLine">
+                <div>сСт при 100ºC:</div>
+                <div>14</div>
+              </div>
+              <div class="charLine">
+                <div>Зольность сульфатная, % мас., ASTM D 874:</div>
+                <div>0,0095</div>
+              </div>
+              <div class="charLine">
+                <div>Содержание фосфора:</div>
+                <div>0.0095</div>
+              </div>
+              <div class="charLine">
+                <div>Температура вспышки, ºC, ASTM D 92:</div>
+                <div>222</div>
+              </div>
+              <div class="charLine">
+                <div>Температура застывания, ºC, ASTM D 97:</div>
+                <div>-39</div>
+              </div>
+            </div>
+            <p onclick="showAll1()"><i id="arrowDownRotate1"></i>Показать все характеристики</p>
+          </aside>
+
+
+          <aside id="tab2" class="tabcontent">
+            <h2>Описание товара</h2>
+            <div id="descr" class="description">
+              <p>Mobil Super 3000 X1 5W-40 представляет собой синтетическое моторное масло, обеспечивающее длительный срок службы двигателей в автомобилях различных типов и годов выпуска, а также повышенный уровень их защиты в широком диапазоне температур.
+              </p>
+              <p>Продукты семейства Mobil Super 3000™ уже хорошо зарекомендовали себя на рынке, поэтому Вы можете быть уверены в том, что эксплуатационные свойства Вашего автомобиля будут полностью соответствовать ожиданиям.</p>
+              <p>Mobil Super 3000 X1 5W-40 представляет собой синтетическое моторное масло, обеспечивающее длительный срок службы двигателей в автомобилях различных типов и годов выпуска, а также повышенный уровень их защиты в широком диапазоне температур.
+              </p>
+              <p>Продукты семейства Mobil Super 3000™ уже хорошо зарекомендовали себя на рынке, поэтому Вы можете быть уверены в том, что эксплуатационные свойства Вашего автомобиля будут полностью соответствовать ожиданиям.</p>
+              <p>Mobil Super 3000 X1 5W-40 представляет собой синтетическое моторное масло, обеспечивающее длительный срок службы двигателей в автомобилях различных типов и годов выпуска, а также повышенный уровень их защиты в широком диапазоне температур.
+              </p>
+              <p>Продукты семейства Mobil Super 3000™ уже хорошо зарекомендовали себя на рынке, поэтому Вы можете быть уверены в том, что эксплуатационные свойства Вашего автомобиля будут полностью соответствовать ожиданиям.</p>
+              <p>Mobil Super 3000 X1 5W-40 представляет собой синтетическое моторное масло, обеспечивающее длительный срок службы двигателей в автомобилях различных типов и годов выпуска, а также повышенный уровень их защиты в широком диапазоне температур.
+              </p>
+              <p>Продукты семейства Mobil Super 3000™ уже хорошо зарекомендовали себя на рынке, поэтому Вы можете быть уверены в том, что эксплуатационные свойства Вашего автомобиля будут полностью соответствовать ожиданиям.</p>
+            </div>
+            <p onclick="showAll2()"><i id="arrowDownRotate2"></i>Подробнее</p>
+          </aside>
+
+          <aside id="tab3" class="tabcontent">
+            <div class="tabsInTab">
+              <ul class="tabsLink">
+                <li onclick="openTabInTab('tab1InTab3', this)" id="defaultOpen1" class="linkBut linkOnTabInTab">Отзывы (10)</li>
+                <li onclick="openTabInTab('tab2InTab3', this)" class="linkBut linkOnTabInTab">Вопросы (7)</li>
+
+              </ul>
+              <div class="reviewBtn">
+                <a href="#" class="linkBut">Оставить отзыв</a>
+              </div>
+            </div>
+            <div id="tab2InTab3" class="contentTabInTab">Тут мав бути блок запитань</div>
+            <div id="tab1InTab3" class="contentTabInTab">
+              <div id="hideReview">
+                <div class="reviewItem">
+                  <div class="reviewInfo">
+                    <h4 class="title">Владимир<span>04.07.2016</span></h4>
+                    <p>У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того
+                      ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше рекламним трюком</p>
+                    <p><span class="green">Достоинства:</span>хорошая батарея, и вообще неплохой телефон</p>
+                    <p><span class="red">Недостатки:</span>не обнаружены</p>
+                    <div class="action">
+                      <div>
+                        <a href="">1 ответ</a>
+                        <a href="">Ответить</a>
+                      </div>
+                      <div class="report">
+                        Был ли вам полезен этот отзыв:
+                        <a href="" class="green"><img src="img/like.png">14</a>
+                        <a href="" class="red"><img src="img/dislike.png">3</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviewRating">
+                    <p>Оценка</p>
+                    <div class="stars-ratings "></div>
+                    <div class="resultRating"></div>
+                  </div>
+                </div>
+                <div class="reviewItem">
+                  <div class="reviewInfo">
+                    <h4 class="title">Владимир<span>04.07.2016</span></h4>
+                    <p>У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того
+                      ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше рекламним трюком</p>
+                    <p><span class="green">Достоинства:</span>хорошая батарея, и вообще неплохой телефон</p>
+                    <p><span class="red">Недостатки:</span>не обнаружены</p>
+                    <div class="action">
+                      <div>
+                        <a href="">1 ответ</a>
+                        <a href="">Ответить</a>
+                      </div>
+                      <div class="report">
+                        Был ли вам полезен этот отзыв:
+                        <a href="" class="green"><img src="img/like.png">14</a>
+                        <a href="" class="red"><img src="img/dislike.png">3</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviewRating">
+                    <p>Оценка</p>
+                    <div class="stars-ratings "></div>
+                    <div class="resultRating"></div>
+                  </div>
+                </div>
+                <div class="reviewItem">
+                  <div class="reviewInfo">
+                    <h4 class="title">Владимир<span>04.07.2016</span></h4>
+                    <p>У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того
+                      ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше рекламним трюком</p>
+                    <p><span class="green">Достоинства:</span>хорошая батарея, и вообще неплохой телефон</p>
+                    <p><span class="red">Недостатки:</span>не обнаружены</p>
+                    <div class="action">
+                      <div>
+                        <a href="">1 ответ</a>
+                        <a href="">Ответить</a>
+                      </div>
+                      <div class="report">
+                        Был ли вам полезен этот отзыв:
+                        <a href="" class="green"><img src="img/like.png">14</a>
+                        <a href="" class="red"><img src="img/dislike.png">3</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviewRating">
+                    <p>Оценка</p>
+                    <div class="stars-ratings "></div>
+                    <div class="resultRating"></div>
+                  </div>
+                </div>
+                <div class="reviewItem">
+                  <div class="reviewInfo">
+                    <h4 class="title">Владимир<span>04.07.2016</span></h4>
+                    <p>У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того
+                      ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше рекламним трюком</p>
+                    <p><span class="green">Достоинства:</span>хорошая батарея, и вообще неплохой телефон</p>
+                    <p><span class="red">Недостатки:</span>не обнаружены</p>
+                    <div class="action">
+                      <div>
+                        <a href="">1 ответ</a>
+                        <a href="">Ответить</a>
+                      </div>
+                      <div class="report">
+                        Был ли вам полезен этот отзыв:
+                        <a href="" class="green"><img src="img/like.png">14</a>
+                        <a href="" class="red"><img src="img/dislike.png">3</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviewRating">
+                    <p>Оценка</p>
+                    <div class="stars-ratings "></div>
+                    <div class="resultRating"></div>
+                  </div>
+                </div>
+                <div class="reviewItem">
+                  <div class="reviewInfo">
+                    <h4 class="title">Владимир<span>04.07.2016</span></h4>
+                    <p>У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того
+                      ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше рекламним трюком</p>
+                    <p><span class="green">Достоинства:</span>хорошая батарея, и вообще неплохой телефон</p>
+                    <p><span class="red">Недостатки:</span>не обнаружены</p>
+                    <div class="action">
+                      <div>
+                        <a href="">1 ответ</a>
+                        <a href="">Ответить</a>
+                      </div>
+                      <div class="report">
+                        Был ли вам полезен этот отзыв:
+                        <a href="" class="green"><img src="img/like.png">14</a>
+                        <a href="" class="red"><img src="img/dislike.png">3</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviewRating">
+                    <p>Оценка</p>
+                    <div class="stars-ratings "></div>
+                    <div class="resultRating"></div>
+                  </div>
+                </div>
+                <div class="reviewItem">
+                  <div class="reviewInfo">
+                    <h4 class="title">Владимир<span>04.07.2016</span></h4>
+                    <p>У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того
+                      ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше рекламним трюком</p>
+                    <p><span class="green">Достоинства:</span>хорошая батарея, и вообще неплохой телефон</p>
+                    <p><span class="red">Недостатки:</span>не обнаружены</p>
+                    <div class="action">
+                      <div>
+                        <a href="">1 ответ</a>
+                        <a href="">Ответить</a>
+                      </div>
+                      <div class="report">
+                        Был ли вам полезен этот отзыв:
+                        <a href="" class="green"><img src="img/like.png">14</a>
+                        <a href="" class="red"><img src="img/dislike.png">3</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviewRating">
+                    <p>Оценка</p>
+                    <div class="stars-ratings "></div>
+                    <div class="resultRating"></div>
+                  </div>
+                </div>
+              </div>
+
+              <p onclick="showAll3()"><i id="arrowDownRotate3"></i>Показать все характеристики</p>
+            </div>
+          </aside>
+
+
+          <aside id="tab4" class="tabcontent">
+            <div>
+              <h4 class="tabTitle">Видеообзоры (2)</h4>
+              <ul class="videoList">
+                <li id="video-1" onclick="modalVideo1()">
+                  <img src="img/play-btn.png" alt="play">
+                </li>
+                <li id="video-2" onclick="modalVideo2()">
+                  <img src="img/play-btn.png" alt="play">
+                </li>
+              </ul>
+              <div id="myModal1" class="modal">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                  <iframe id="img01" width="1120" height="630" src="https://www.youtube.com/embed/IpM_faC36mA" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div id="myModal2" class="modal">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                  <iframe id="img02" width="1120" height="630" src="https://www.youtube.com/embed/ribBP7gAvvg" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <h4 class="tabTitle">Статьи (2)</h4>
+            <article>
+              <div id="articleArrow" class="carousel">
+                <div>
+                  <div class="articleArrow arrPrev"><i class="prev"></i></div>
+                  <div class="articleArrow arrNext"><i class="next"></i></div>
+                </div>
+              </div>
+              <div id="carousel1" class="carousel1">
+                <div class="gallery">
+                  <ul>
+                    <li class="article">
+                      <div>
+                        <div>
+                          <img src="img//article-image-1.jpg" alt="article">
+                        </div>
+                        <div>
+                          <div>16 августа 2016</div>
+                          <h4>Подробный обзор и выявление недостатков навигатора DriveAssist 50LMT</h4>
+                          <p>Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ... года назад, он был одним из самых желаемых ... ююююююавто-гаджетов.
+                            А теперь достаточно скачать на смартфон бесплатную</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="article">
+                      <div>
+                        <div>
+                          <img src="img/article-image-2.jpg" alt="article">
+                        </div>
+                        <div>
+                          <div>16 августа 2016</div>
+                          <h4>Подробный обзор и выявление недостатков навигатора <br> DriveAssist 50LMT</h4>
+                          <p>Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ... года назад, он был одним из самых желаемых ... ююююююавто-гаджетов.
+                            А теперь достаточно скачать на смартфон бесплатную</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </aside>
+
+
+
+          <aside id="tab5" class="tabcontent">
+            <h2>Сертификаты соответствия</h2>
+            <div class="sertificates">
+              <div><img src="img/sert4.jpg"></div>
+              <div><img src="img/sert3.jpg"></div>
+              <div><img src="img/sert1.jpg"></div>
+              <div><img src="img/sert2.jpg"></div>
+            </div>
+          </aside>
+
+          <!--/////////TABSS/////////////-->
+        </div>
+        <!--/////////TABSS//////////////-->
+        <aside class="simTovarRight">
+          <div class="similarRight">
+            <a href="">
+                  <img src="img/mobil1.png" alt="oil">
+              </a>
+            <div class="statusTovar">
+              <span class="">Нет в наличии</span>
+            </div>
+            <a class="discrSimTovarRight" href="">Моторное масло Liqui Moly TOP TEC 4100 5W-40 4</a>
+            <div class="price">326 <span>грн</span></div>
+            <div>
+              <a href="" class="butAndIcon">Сообщить о поступлении</a>
+              <a href=""><img class="iconVaga" src="img/vaga.svg"></a>
+            </div>
+            <a href="">Показать все похожие товары</a>
+          </div>
+          <div class="productAvto">
+            <p><img src="img/galochka.svg">Товар подходит к вашему авто:</p>
+            <form>
+              <select class="form-control">
+                    <option>Volkswagen Golf, 1.9</option>
+                    <option>Volkswagen Golf, 2.8</option>
+                    <option>Volkswagen Golf, 3.7</option>
+                    <option>Volkswagen Golf, 4.6</option>
+                    <option>Volkswagen Golf, 5.5</option>
+                    <option>Volkswagen Golf, 6.4</option> 
+                    <option>Volkswagen Golf, 7.3</option>
+                    <option>Volkswagen Golf, 8.2</option> 
+                    <option>Volkswagen Golf, 9.1</option>
+                </select>
+            </form>
+          </div>
+        </aside>
+      </section>
+
+    </section>
+
+
+
+    <!--BUYTOGETHER-->
+
+    <section id="buyTogether">
+      <h3>С этим товаром так же покупают:</h3>
+      <ul class="togethers">
+        <li class="buyTogether" onclick="openTabBuyTogether('togetherBuyTab1', this)" id="defaultOpen2">Омыватели</li>
+        <li class="buyTogether" onclick="openTabBuyTogether('togetherBuyTab2', this)">Очистители</li>
+        <li class="buyTogether" onclick="openTabBuyTogether('togetherBuyTab3', this)">Топливные фильтры</li>
+        <li class="buyTogether" onclick="openTabBuyTogether('togetherBuyTab4', this)">Моторное масло</li>
+        <li class="buyTogether" onclick="openTabBuyTogether('togetherBuyTab5', this)">Инструменты для авто</li>
+      </ul>
+
+      <aside id="togetherBuyTab1" class="tabBuyTogether">
+
+        <div id="arrowsTogether1" class="carousel">
+          <div>
             <div class="arrow arrPrev"><i class="prev"></i></div>
             <div class="arrow arrNext"><i class="next"></i></div>
-        </div>
-        <div id="carousel" class="carousel">
-
-            <div class="gallery">
-                <ul>
-                    <li>
-                        <div class="block-color">1</div>
-                    </li>
-                    <li>
-                        <div class="block-color">2</div>
-                    </li>
-                    <li>
-                        <div class="block-color">3</div>
-                    </li>
-                    <li>
-                        <div class="block-color">4</div>
-                    </li>
-                    <li>
-                        <div class="block-color">5</div>
-                    </li>
-                    <li>
-                        <div class="block-color">6</div>
-                    </li>
-                    <li>
-                        <div class="block-color">7</div>
-                    </li>
-                    <li>
-                        <div class="block-color">8</div>
-                    </li>
-                    <li>
-                        <div class="block-color">9</div>
-                    </li>
-                    <li>
-                        <div class="block-color">10</div>
-                    </li>
-                    <li>
-                        <div class="block-color">11</div>
-                    </li>
-                    <li>
-                        <div class="block-color">12</div>
-                    </li>
-                    <li>
-                        <div class="block-color">13</div>
-                    </li>
-                    <li>
-                        <div class="block-color">14</div>
-                    </li>
-                    <li>
-                        <div class="block-color">15</div>
-                    </li>
-                    <li>
-                        <div class="block-color">16</div>
-                    </li>
-                    <li>
-                        <div class="block-color">17</div>
-                    </li>
-                    <li>
-                        <div class="block-color">18</div>
-                    </li>
-                    <li>
-                        <div class="block-color">19</div>
-                    </li>
-                    <li>
-                        <div class="block-color">20</div>
-                    </li>
-                    <li>
-                        <div class="block-color">21</div>
-                    </li>
-                </ul>
-            </div>
-
+          </div>
         </div>
 
-
-    </div>
-
-    <div id="tovarRepeat" hidden>
-        <section class="tovar">
-            <div>
-                <div class="image">
-                    <img src="img/helix.png">
-                </div>
-                <div class="code">
-                    <p>Код товара : 39207</p>
-                    <p><img src="img/galochka.svg">В наличии</p>
-                </div>
-                <div class="name">
-                    <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
-                </div>
-                <div class="price">
-                    <p>104 грн</p>
-                </div>
-                <div class="buy">
-                    <div class="btn">
-                        <p>Купить</p>
+        <div id="carousel2" class="carouselTogether">
+          <div class="gallery">
+            <ul>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/magnatec.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
                     </div>
-                    <img src="img/vaga.svg">
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="rtg-feed">
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/mobil1.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/mobile-super.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/shell.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </aside>
+
+
+      <aside id="togetherBuyTab2" class="tabBuyTogether">
+
+
+        <div id="arrowsTogether2" class="carousel">
+          <div>
+            <div class="arrow arrPrev"><i class="prev"></i></div>
+            <div class="arrow arrNext"><i class="next"></i></div>
+          </div>
+        </div>
+
+        <div id="carousel3" class="carouselTogether">
+          <div class="gallery">
+            <ul>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </aside>
+
+
+      <aside id="togetherBuyTab3" class="tabBuyTogether">
+
+
+        <div id="arrowsTogether3" class="carousel">
+          <div>
+            <div class="arrow arrPrev"><i class="prev"></i></div>
+            <div class="arrow arrNext"><i class="next"></i></div>
+          </div>
+        </div>
+
+        <div id="carousel4" class="carouselTogether">
+          <div class="gallery">
+            <ul>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </aside>
+
+
+      <aside id="togetherBuyTab4" class="tabBuyTogether">
+
+
+        <div id="arrowsTogether4" class="carousel">
+          <div>
+            <div class="arrow arrPrev"><i class="prev"></i></div>
+            <div class="arrow arrNext"><i class="next"></i></div>
+          </div>
+        </div>
+
+        <div id="carousel5" class="carouselTogether">
+          <div class="gallery">
+            <ul>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </aside>
+
+
+      <aside id="togetherBuyTab5" class="tabBuyTogether">
+
+
+        <div id="arrowsTogether5" class="carousel">
+          <div>
+            <div class="arrow arrPrev"><i class="prev"></i></div>
+            <div class="arrow arrNext"><i class="next"></i></div>
+          </div>
+        </div>
+
+        <div id="carousel6" class="carouselTogether">
+          <div class="gallery">
+            <ul>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blockTogetherBuy">
+                <div class="tovar">
+                  <div>
+                    <div class="image"><img src="img/helix.png"></div>
+                    <div class="code">
+                      <p>Код товара : 39207</p>
+                      <p><img src="img/galochka.svg">В наличии</p>
+                    </div>
+                    <div class="name">
+                      <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                    </div>
+                    <div class="price">
+                      <p>104 грн</p>
+                    </div>
+                    <div class="buy">
+                      <div class="btn">
+                        <p>Купить</p>
+                      </div><img src="img/vaga.svg"></div>
+                    <div class="rtg-feed">
+                      <div class="stars-ratings"></div>
+                      <div class="resultRating"></div>
+                      <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+    </section>
+
+
+    <!--BUYTOGETHER-->
+
+
+    <section id="selectedFor">
+      <div class="titleSelectedFor">
+        <h3>Покупатели выбирают для:</h3>
+        <form>
+          <select>
+                  <option>Volkswagen Golf, 1.9</option>
+                  <option>Volkswagen Golf, 2.8</option>
+                  <option>Volkswagen Golf, 3.7</option>
+                  <option>Volkswagen Golf, 4.6</option>
+                  <option>Volkswagen Golf, 5.5</option>
+                  <option>Volkswagen Golf, 6.4</option>
+              </select>
+        </form>
+      </div>
+
+
+      <div id="arrowSelected" class="carousel">
+        <div>
+          <div class="arrow arrPrev"><i class="prev"></i></div>
+          <div class="arrow arrNext"><i class="next"></i></div>
+        </div>
+      </div>
+      <div id="carouselSelected" class="carousel">
+        <div class="gallery">
+          <ul>
+            <li>
+              <div class="slider">
+                <div>
+                  <div class="tovar">
+                    <span class="sale">Скидка -10%</span>
+                    <div>
+                      <div class="image"><img src="img/selectedFor-1.jpg"></div>
+                      <div class="code">
+                        <p>Код товара : 39207</p>
+                        <p><img src="img/galochka.svg">В наличии</p>
+                      </div>
+                      <div class="name">
+                        <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                      </div>
+                      <div class="price">
+                        <p>104 грн</p><span class="discount">125 грн</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slider">
+                <div>
+                  <div class="tovar">
+                    <div>
+                      <div class="image"><img src="img/selectedFor-2.jpg"></div>
+                      <div class="code">
+                        <p>Код товара : 39207</p>
+                        <p><img src="img/galochka.svg">В наличии</p>
+                      </div>
+                      <div class="name">
+                        <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                      </div>
+                      <div class="price">
+                        <p>104 грн</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slider">
+                <div>
+                  <div class="tovar">
+                    <div>
+                      <div class="image"><img src="img/selectedFor-3.jpg"></div>
+                      <div class="code">
+                        <p>Код товара : 39207</p>
+                        <p><img src="img/galochka.svg">В наличии</p>
+                      </div>
+                      <div class="name">
+                        <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                      </div>
+                      <div class="price">
+                        <p>104 грн</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slider">
+                <div>
+                  <div class="tovar">
+                    <div>
+                      <div class="image"><img src="img/selectedFor-4.jpg"></div>
+                      <div class="code">
+                        <p>Код товара : 39207</p>
+                        <p><img src="img/galochka.svg">В наличии</p>
+                      </div>
+                      <div class="name">
+                        <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                      </div>
+                      <div class="price">
+                        <p>104 грн</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slider">
+                <div>
+                  <div class="tovar">
+                    <div>
+                      <div class="image"><img src="img/selectedFor-5.jpg"></div>
+                      <div class="code">
+                        <p>Код товара : 39207</p>
+                        <p><img src="img/galochka.svg">В наличии</p>
+                      </div>
+                      <div class="name">
+                        <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                      </div>
+                      <div class="price">
+                        <p>104 грн</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slider">
+                <div>
+                  <div class="tovar">
+                    <div>
+                      <div class="image"><img src="img/selectedFor-1.jpg"></div>
+                      <div class="code">
+                        <p>Код товара : 39207</p>
+                        <p><img src="img/galochka.svg">В наличии</p>
+                      </div>
+                      <div class="name">
+                        <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                      </div>
+                      <div class="price">
+                        <p>104 грн</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slider">
+                <div>
+                  <div class="tovar">
+                    <div>
+                      <div class="image"><img src="img/selectedFor-2.jpg"></div>
+                      <div class="code">
+                        <p>Код товара : 39207</p>
+                        <p><img src="img/galochka.svg">В наличии</p>
+                      </div>
+                      <div class="name">
+                        <p>Моторное масло Castrol</br> Magnatec 10W-40 A3/B4 4 л</p>
+                      </div>
+                      <div class="price">
+                        <p>104 грн</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+
+    <section id="youWatched">
+      <h4 class="youWatchedTitle">Вы просматривали
+        <a href="#">
+          Все просмотренные товары<i></i>
+          </a>
+      </h4>
+      <div id="arrowYouWatched" class="carousel">
+        <div>
+          <div class="articleArrow arrPrev"><i class="prev"></i></div>
+          <div class="articleArrow arrNext"><i class="next"></i></div>
+        </div>
+      </div>
+      <div id="carousel7" class="carousel1">
+        <div class="gallery">
+          <ul>
+            <li>
+              <div class="tovar">
+                <div class="youWatched">
+                  <div class="image"><img src="img/watched1.jpg"></div>
+                  <div class="name">
+                    <p>Трансмиссионное масло </br>Castrol MANUAL 10W-40 A3/B4 4 л</p>
+                  </div>
+                  <div class="code">
+                    <p><img src="img/galochka.svg">В наличии</p>
+                  </div>
+                  <div class="price">
+                    <p>104 грн</p>
+                  </div>
+                  <div class="buy">
+                    <div class="btn">
+                      <p>Купить</p>
+                    </div><img src="img/vaga.svg"></div>
+                  <div class="rtg-feed">
                     <div class="stars-ratings"></div>
-                    <div><img src="img/feedback.svg"><a href="#">3 отзыва</a></div>
+                    <div class="resultRating"></div>
+                    <div><img src="img/feedback.svg"><a href="#">32 отзыва</a></div>
+                  </div>
                 </div>
-            </div>
-        </section>
+              </div>
+            </li>
+            <li>
+              <div class="tovar">
+                <div class="youWatched">
+                  <div class="image"><img src="img/watched2.jpg"></div>
+                  <div class="name">
+                    <p>Трансмиссионное масло </br>Castrol MANUAL 10W-40 A3/B4 4 л</p>
+                  </div>
+                  <div class="code">
+                    <p><img src="img/galochka.svg">В наличии</p>
+                  </div>
+                  <div class="price">
+                    <p>104 грн</p>
+                  </div>
+                  <div class="buy">
+                    <div class="btn">
+                      <p>Купить</p>
+                    </div><img src="img/vaga.svg"></div>
+                  <div class="rtg-feed">
+                    <div class="stars-ratings"></div>
+                    <div class="resultRating"></div>
+                    <div><img src="img/feedback.svg"><a href="#">32 отзыва</a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="tovar">
+                <div class="youWatched">
+                  <div class="image"><img src="img/watched3.jpg"></div>
+                  <div class="name">
+                    <p>Трансмиссионное масло </br>Castrol MANUAL 10W-40 A3/B4 4 л</p>
+                  </div>
+                  <div class="code">
+                    <p><img src="img/galochka.svg">В наличии</p>
+                  </div>
+                  <div class="price">
+                    <p>104 грн</p>
+                  </div>
+                  <div class="buy">
+                    <div class="btn">
+                      <p>Купить</p>
+                    </div><img src="img/vaga.svg"></div>
+                  <div class="rtg-feed">
+                    <div class="stars-ratings"></div>
+                    <div class="resultRating"></div>
+                    <div><img src="img/feedback.svg"><a href="#">32 отзыва</a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="tovar">
+                <div class="youWatched">
+                  <div class="image"><img src="img/watched4.jpg"></div>
+                  <div class="name">
+                    <p>Трансмиссионное масло </br>Castrol MANUAL 10W-40 A3/B4 4 л</p>
+                  </div>
+                  <div class="code">
+                    <p><img src="img/galochka.svg">В наличии</p>
+                  </div>
+                  <div class="price">
+                    <p>104 грн</p>
+                  </div>
+                  <div class="buy">
+                    <div class="btn">
+                      <p>Купить</p>
+                    </div><img src="img/vaga.svg"></div>
+                  <div class="rtg-feed">
+                    <div class="stars-ratings"></div>
+                    <div class="resultRating"></div>
+                    <div><img src="img/feedback.svg"><a href="#">32 отзыва</a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="tovar">
+                <div class="youWatched">
+                  <div class="image"><img src="img/watched5.jpg"></div>
+                  <div class="name">
+                    <p>Трансмиссионное масло </br>Castrol MANUAL 10W-40 A3/B4 4 л</p>
+                  </div>
+                  <div class="code">
+                    <p><img src="img/galochka.svg">В наличии</p>
+                  </div>
+                  <div class="price">
+                    <p>104 грн</p>
+                  </div>
+                  <div class="buy">
+                    <div class="btn">
+                      <p>Купить</p>
+                    </div><img src="img/vaga.svg"></div>
+                  <div class="rtg-feed">
+                    <div class="stars-ratings"></div>
+                    <div class="resultRating"></div>
+                    <div><img src="img/feedback.svg"><a href="#">32 отзыва</a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="tovar">
+                <div class="youWatched">
+                  <div class="image"><img src="img/watched1.jpg"></div>
+                  <div class="name">
+                    <p>Трансмиссионное масло </br>Castrol MANUAL 10W-40 A3/B4 4 л</p>
+                  </div>
+                  <div class="code">
+                    <p><img src="img/galochka.svg">В наличии</p>
+                  </div>
+                  <div class="price">
+                    <p>104 грн</p>
+                  </div>
+                  <div class="buy">
+                    <div class="btn">
+                      <p>Купить</p>
+                    </div><img src="img/vaga.svg"></div>
+                  <div class="rtg-feed">
+                    <div class="stars-ratings"></div>
+                    <div class="resultRating"></div>
+                    <div><img src="img/feedback.svg"><a href="#">32 отзыва</a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="wrapper">
+      <span class="overlay"></span>
+      <div class="footerMenu disFlex">
+        <ul class="menu">
+          <li class="menuHeader">Каталог</li>
+          <li><a href="">Электроника</a></li>
+          <li><a href="">Звук и видео</a></li>
+          <li><a href="">Запчасти и расходники</a></li>
+          <li><a href="">Интерьер</a></li>
+          <li><a href="">Экстерьер</a></li>
+          <li><a href="">Колеса</a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menuHeader"></li>
+          <li><a href="">Багаж и крепление</a></li>
+          <li><a href="">Автономия</a></li>
+          <li><a href="">Техпомощь</a></li>
+          <li><a href="">Инструмент</a></li>
+          <li><a href="">Туризм</a></li>
+          <li><a href="">4х4 джилинг</a></li>
+          <li><a href="">Мото</a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menuHeader">Компания</li>
+          <li><a href="">О нас</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Магазины</a></li>
+          <li><a href="">Партнеры</a></li>
+          <li><a href="">Оптовым покупателям</a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menuHeader">Покупателям</li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Оплата</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Кредит</a></li>
+          <li><a href="">Бонусная программа</a></li>
+          <li><a href="">Акции</a></li>
+          <li><a href="">Карта сайта</a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menuHeader">Информация</li>
+          <li><a href="">Как выбрать</a></li>
+          <li><a href="">Сравнительные тесты</a></li>
+          <li><a href="">Новости</a></li>
+          <li><a href="">Часто задаваемые вопросы</a></li>
+        </ul>
+        <div class="footerCopyrite disFlex">
+          <span>© 2016. База автозвука</span>
+          <span>Разработано в <a href="" class="author">Турум-бурум</a></span>
+        </div>
+      </div>
+      <div class="footerContact">
+        <a href="tel:0800301585" class="phone">0 800 30-15-85</a>
+        <span class="phoneNote">Бесплатно со стационарных <br> и мобильных телефонов Украины</span>
+        <div class="footerSocial">
+          <h5 class="title">Следите за нами в соцсетях</h5>
+          <a href=""><i class="icon icon_fb"></i></a>
+          <a href=""><i class="icon icon_gp"></i></a>
+          <a href=""><i class="icon icon_tw"></i></a>
+          <a href=""><i class="icon icon_yt"></i></a>
+          <a href=""><i class="icon icon_vk"></i></a>
+          <a href=""><i class="icon icon_inst"></i></a>
+        </div>
+      </div>
     </div>
-        
-    <script type="text/javascript" src="index.js"></script>
-    <script type="text/javascript" src="carousel.js"></script>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="node_modules/rateyo/src/jquery.rateyo.js"></script>
+
+
 </body>
 
 </html>

@@ -1,0 +1,71 @@
+.slider
+  width: 257px
+  height: 100%
+
+#simTovar
+  max-width: 1289px
+  margin: 40px auto 60px
+
+#arrows
+  display: flex
+  justify-content: space-between
+  > div
+    display: flex
+    justify-content: center
+  i
+    border: 1px solid white
+    border-width: 0 3px 3px 0
+    display: inline-block
+    padding: 4px
+  
+  
+.arrow, .articleArrow
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #3c3f43
+    height: 0
+    color: white
+    width: 0
+    padding: 22.5px
+   
+    
+    &:hover
+        background-color: #474a4e
+    i
+        border: 1px solid white
+        border-width: 0 3px 3px 0
+        display: inline-block
+        padding: 4px   
+
+#buyTogether
+    .arrow
+        margin-top: -43px
+.next
+  transform: rotate(-45deg)
+  -webkit-transform: rotate(-45deg)
+
+.prev
+  transform: rotate(135deg)
+  -webkit-transform: rotate(135deg)
+
+.gallery
+  overflow: hidden
+  ul
+    // height: 506px
+    width: 9999px
+    margin: 0
+    padding: 0
+    list-style: none
+    transition: margin-left 250ms
+  li
+    display: inline-block
+
+.simularTovar
+  display: flex
+  align-items: center
+  font-size: 28px
+  color: rgb(51, 51, 51)
+  font-weight: bold
+  line-height: 0.446

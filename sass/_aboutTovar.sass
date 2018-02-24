@@ -1,0 +1,254 @@
+#aboutTovar
+    max-width: 1289px
+    margin: 0 auto 70px 
+
+
+
+.crump-name
+    margin: 20px auto 25px
+    max-width: 1289px
+    height: 68px
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    .crump
+        font-size: 13px
+        color: rgb(153, 153, 153)
+        line-height: 0.572
+        i
+                border: solid rgb(153, 153, 153)
+                border-width: 0 1px 1px 0
+                display: inline-block
+                padding: 1.7px
+                transform: rotate(-45deg)
+                -webkit-transform: rotate(-45deg)
+                margin: 0px 15px 2.5px 15px
+    div
+        @extend .flex
+        h2
+            font-size: 34px
+            color: rgb(51, 51, 51)
+            font-weight: bold
+            line-height: 0.368
+            text-align: right
+        p
+            background-image: url(../img/codtovara.svg)
+            background-repeat: no-repeat
+            padding: 8px
+            font-size: 13px
+            
+            
+#miniGalery
+    @extend .flex
+    box-sizing: border-box
+    margin: 0
+    min-width: 559px
+    height: 400px
+    margin: 0 35px 0 0
+    >div:first-child
+        height: 213px
+        width: 139px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &:after
+            content: ""
+            display: table
+            clear: both 
+        div
+            border-width: 1px
+            border-color: rgb(255, 220, 44)
+            border-style: solid
+            width: 65px
+            height: 65px
+            img
+                @extend .flex
+                height: 100%
+                margin: 0 auto
+                opacity: 0.8
+                cursor: pointer
+                &:hover
+                    opacity: 1
+    >div:last-child
+        position: relative
+        // display: none
+        min-width: 282px
+        height: 382px
+        img
+            width: 100%
+            
+.resultRating
+        width: 10px
+                            
+
+.tovarInfo
+    box-sizing: border-box
+    display: flex
+    flex-wrap: wrap
+    >div:first-child
+        display: flex
+        width: 100%
+        -webkit-box-align: center
+        -webkit-align-items: center
+        -ms-flex-align: center
+        align-items: center
+        font-size: 13px
+        margin-bottom: 30px
+        p
+            margin-right: 27px
+            font-size: 13px
+        a
+            border-bottom: 1px solid #777
+            color: #777
+            line-height: 16px
+            margin-left: 50px
+            i
+                height: 12px
+                width: 12px
+                margin-left: -20px
+                margin-right: 5px
+                display: inline-block
+                vertical-align: middle
+        &:nth-child(1)
+            i
+                background: url(img/feedback.svg) no-repeat
+        a:last-child
+            i
+                background: url(img/qestion.svg) no-repeat
+    
+    >div:nth-child(2)
+        box-sizing: border-box
+        background-color: #f7f7f9
+        padding: 15px 29px 25px
+        margin-right: 36px
+        width: 340px
+        .price
+            line-height: 1.75
+            color: #999
+            font-size: 40px
+            font-weight: 700
+            margin-bottom: 14px
+            span
+                font-size: 20px
+        .redBut
+            display: flex
+            flex-direction: column
+            align-items: center
+            font-size: 18px
+            font-weight: 700
+            padding: 13px 20px
+            border-color: #fb2525
+            cursor: pointer
+            color: #333
+            border: 2px solid #fb2525
+            text-align: center
+            outline: 0
+            margin: 0 0 25px 0
+        .redBut:hover
+            background-color: #fb2525
+        p
+            color: #777
+            font-size: 11px
+            line-height: 14px
+            margin-bottom: 30px
+            margin-top: 25px
+        div.beforRedBut
+            margin: 27px 0 38px 0
+        div.action 
+            a
+                margin-right: 30px
+                color: #333
+                font-size: 13px
+                i
+                    height: 21px
+                    width: 25px
+                    margin-right: 10px
+                    display: inline-block
+                    vertical-align: middle
+                .icon_share
+                    background: url(img/shareit.svg) no-repeat
+                .icon_compare
+                    background: url(img/vaga.svg) no-repeat
+
+.infoAboutTovar
+    display: flex
+    
+.similar
+    position: relative
+    border: 1px solid #e9eaeb
+    padding: 30px 50px 0
+    width: 200px
+    height: 329px
+    p
+        position: absolute
+        right: 50px
+        left: 50px
+        background-color: #fff
+        padding: 0 5px
+        text-align: center
+        top: 0
+        font-size: 22px
+        font-weight: 700
+        line-height: 12px
+        -webkit-transform: translateY(-50%)
+        -ms-transform: translateY(-50%)
+        transform: translateY(-50%)
+    a.similarImg
+        display: flex
+        justify-content: center
+        height: 180px
+        margin-bottom: 15px
+        img
+            max-height: 100%
+            
+    a.discr
+        font-size: 13px
+        line-height: 16px
+        height: auto
+        max-height: 48px
+        font-weight: 400
+        color: #333
+        overflow: hidden
+        margin-bottom: 5px
+        &:hover
+            text-decoration: underline
+    div.price
+        line-height: 1.75
+        color: #333
+        font-size: 20px
+        font-weight: 700
+        margin-bottom: 14px
+        span
+            font-size: 16px
+    a.allSimilar
+        text-decoration: underline
+        color: #fb2525
+        bottom: 0
+        font-size: 13px
+        line-height: 16px
+        -webkit-transform: translateY(50%)
+        -ms-transform: translateY(50%)
+        transform: translateY(50%)
+        position: absolute
+        right: 50px
+        left: 50px
+        background-color: #fff
+        padding: 0 5px
+        text-align: center
+
+
+                
+            
+.status
+    @extend .flex
+    span
+        font-size: 13px
+        margin-top: 15px
+        font-size: 12px
+        line-height: 1.2
+    span:first-child
+        color: rgb(153, 153, 153)
+    span:last-child
+        color: rgb(87, 174, 133)
+        img
+            margin-right: 8px        
